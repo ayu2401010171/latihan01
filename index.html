@@ -6,11 +6,11 @@
   <title>Hello World</title>
   <link href='/style.css' rel='stylesheet'>
   <style>
-  h1{color:blue; font-weight: bold; text-shadow: 2px 2px 10px black;}
+  h1{color:rgb(192, 255, 207); font-weight: bold; text-shadow: 2px 2px 10px black;}
   h2{color:rgb(236, 233, 42); font-family:Verdana, Geneva, Tahoma, sans-serif;}
-  h3{color:aqua}
-  h4{color:#56A132; text-shadow: 2px 2px 8px #000;}
-  h5{color:#C0C0C0;}
+  h3{color:rgb(241, 22, 22); text-shadow: 2px 2px 10px rgb(44, 39, 39);}
+  h4{color:#4832a1; text-shadow: 2px 2px 8px #000;}
+  h5{color:#27830f;}
   h6{color:brown;font-size: 20px;}
   p{font-size:20px;color:#0000CF;}
   table{
@@ -22,56 +22,122 @@
   }
   button{ color:#00FF00;}
   button{
-    background-color: green;
+    background-color: rgb(128, 0, 94);
     color:white;
     padding: 5px 10px 5px 20px ;
     border: none;
     border-radius: 15px 0;
   }
   </style>
-</head>
 
+</head>
 <body>
-  <h1>Hello, world!</h1>
-  <h2>gimana hari ini</h2>
+  <h1>Hai i'm Ayu!</h1>
+  <h2>Hallo semua</h2>
   <h3>header 3</h3>
   <h4>header 4</h4>
   <h5>header 5</h5>
   <h6>header 6</h6>
   <button onclick="console.log('hello');">Press me</button>
 
-  <p>pada suatu hari hiduplah seorang <strong>anak kecil</strong> <br> di tengah hutan bersama kedua <i>orang tua</i> nya, di tengah <sub>hutan</sub>tersebut <u>hidup</u> nya <sup>sangat</sup> amat menyedihkan</p>
+  <p>pada suatu hari hiduplah seorang <strong>anak kecil</strong> <br> di suatu desa bersama kedua <i>orang tua</i> nya di <sub>desa</sub> tersebut <u>mereka</u> membuka <sup>warung</sup> yang menjual makanan</p>
   <p>
-    mereka sangat kesusahan untuk mencari makanan di tengah hutan tersebut, mau tidak mau mereka terpaksa pergi untuk berburu hewan untuk dimakan</p>
+    warung mereka sangat amat ramai sehingga mereka ssangat kelelahan saat berjualan</p>
     <h3>makanan</h3>
     <ul>
       <li>nasi goreng</li>
       <li>bubur ayam</li>
+      <li>ayam goreng</li>
     </ul>
     <hr>
-    <ol style="color:fuchsia;list-style:upper-roman;">
+    <ol style="color:rgb(164, 22, 164);list-style:upper-roman;">
       <li>kecap</li>
       <li>saus</li>
+      <li>tepung</li>
     </ol>
-   <p>
-   <h3>tabel harga</h3>
    </p>
-   <table>
-    <tr>
-      <td>item barang</td>
-      <td>harga satuan</td>
-      <td>harga duaan</td>
-    </tr>
-    <tr>
-      <td>1.</td>
-      <td>nasi goreng</td>
-      <td>20.000</td>
-    </tr>
-    <tr>
-      <td>2.</td>
-      <td>bubur ayam</td>
-      <td>30.000</td>
-    </tr>
-  </table>
-  <script defer type="text/javascript" src="/main.js"></script>
+   <p>
+      <h3>tabel harga</h3>
+      <table>
+       <thead>
+        <tr>
+          <td>item makanan</td>
+          <td>nama makanan</td>
+          <td>harga satuan</td>
+        </tr>
+       </thead> 
+       <tbody>
+        <tr>
+          <td>1</td>
+          <td>nasi goreng</td>
+          <td>20.000</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>bubur ayam</td>
+          <td>25.000</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>ayam goreng</td>
+          <td>50.000</td>
+        </tr>
+       </tbody>  
+       </table>
+   </p>
+    <script defer type="text/javascript" src="/main.js"></script>
 </body>
+</html>
+
+<style>
+  label{font-size: 14px;font-weight: bold;}
+  input[type=text],input[type=number],input[type=date],input[type=time],input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin: 8px 0;
+    color: rgb(26, 27, 25);
+    background-color: pink;
+    font-size:16px;
+  }
+  select{
+    widht:100%;
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin: 8px 0;
+    color: rgb(25, 26, 25);
+    background-color: pink;
+    font-size:16px;
+  }
+  input[type=checkbox],input[type=radio]{
+    outline: 1px solid #bdb8b8;
+  }
+</style>
+<form>
+  <label>Form Text</label>
+  <input type="text" name="txalamat" value="isikan alamat" id="txalamat" class="txalamat">
+  <label>Form Number</label>
+  <input type="number">
+  <label>Form TGL</label>
+  <input type="date"> 
+  <label>Form Waktu</label>
+  <input type="time">
+  <label>Form Pilihan</label>
+  <input type="radio" name="jnsk">Cewe
+  <input type="radio" name="jnsk">Cowo
+  <br>
+  <input type="checkbox">Sepak Bola 
+  <input type="checkbox">Menari 
+  <input type="checkbox">Acting
+  <label>Form Pilihan</label>
+  <select>
+    <option disabled selected>silahkan pilih warna</option>
+    <option>pink</option>
+    <option>hijau</option>
+    <option>merah</option>
+  </select>
+  <label>form password</label>
+  <input type="password" name="txPASS">
+
+  <input type="submit" value="tombol">
+</form>
